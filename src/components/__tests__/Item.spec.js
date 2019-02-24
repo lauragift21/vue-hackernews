@@ -5,5 +5,6 @@ describe('Item.vue', () => {
   test('sanity test', () => {
     const wrapper = shallowMount(Item)
     expect(wrapper.text()).toContain('item')
+    expect(wrapper).toMatchSnapshot()
   })
 })
